@@ -24,7 +24,7 @@ module.exports = {
   },
   output: {
     path: outPath,
-    publicPath: isProduction ? './' : '/',
+    publicPath: isProduction ? '' : '/',
     filename: 'bundle.js',
   },
   target: 'web',
@@ -78,7 +78,7 @@ module.exports = {
       },
       // static assets
       { test: /\.html$/, use: 'html-loader' },
-      { test: /\.png$/, use: ['url-loader?limit=10000', 'file-loader']},
+      { test: /\.png$/, use: ['url-loader?limit=10000', 'file-loader?name=[name].[ext]&publicPath=assets/img/&outputPath=assets/img/']},
       { test: /\.jpg$/, use: 'file-loader' },
     ],
   },
@@ -101,7 +101,7 @@ module.exports = {
     contentBase: sourcePath,
     hot: true,
     stats: {
-      warnings: true
+      warnings: false
     },
   },
   node: {

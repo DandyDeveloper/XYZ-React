@@ -1,10 +1,10 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
-import { Router, Route, Switch } from 'react-router-dom';
-import { createBrowserHistory } from 'history';
+import { createHashHistory } from 'history';
 import { App } from './containers/App';
+import { Router, Route, Switch } from 'react-router-dom';
 
-const history = createBrowserHistory();
+const history = createHashHistory();
 
 ReactDOM.render(
     <Router history={history}>

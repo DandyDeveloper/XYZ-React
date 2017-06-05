@@ -16,9 +16,12 @@ export class MerchandisePage extends React.Component<any, any> {
       slidesToScroll: 1
   	}
 
+    //Dynamic Context for Webpack loader. 
+    const pathToCats = require.context('../../assets/img', true);
+
   	const images = 	[
-          						[1, require('../../assets/img/x1.png') ], [2, require('../../assets/img/x2.png')], 
-          						[3, require('../../assets/img/x3.png') ], [4, require('../../assets/img/x4.png')]
+          						[1,'../../assets/img/x1.png' ], [2,'../../assets/img/x2.png'], 
+          						[3,'../../assets/img/x3.png' ], [4,'../../assets/img/x4.png']
   					        ];
     return (
       <div>
@@ -26,7 +29,7 @@ export class MerchandisePage extends React.Component<any, any> {
         <div className={style.Container}> 
         	<h3>X Kit Serise</h3>
             <Slider {...sliderSettings}> 
-		          {images.map(([uniqueId, imgRef]) => <div><Img key={uniqueId} className={style.SliderImages} src={imgRef} /></div>)}
+		          {images.map(([uniqueId, imgRef]) => <div key={uniqueId}><Img key={uniqueId} className={style.SliderImages} src={imgRef} /></div>)}
 	      	  </Slider>
 	      </div>
       </div>
