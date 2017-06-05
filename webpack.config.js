@@ -24,7 +24,7 @@ module.exports = {
   },
   output: {
     path: outPath,
-    publicPath: '/',
+    publicPath: isProduction ? './' : '/',
     filename: 'bundle.js',
   },
   target: 'web',
@@ -101,7 +101,7 @@ module.exports = {
     contentBase: sourcePath,
     hot: true,
     stats: {
-      warnings: false
+      warnings: true
     },
   },
   node: {

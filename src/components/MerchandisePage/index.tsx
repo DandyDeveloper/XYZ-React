@@ -26,9 +26,9 @@ export class MerchandisePage extends React.Component<any, any> {
         <div className={style.Container}> 
         	<h3>X Kit Serise</h3>
             <Slider {...sliderSettings}> 
-		        {images.map(([uniqueId, imgRef]) => <div><Img key={uniqueId} className={style.SliderImages} src={imgRef} /></div>)}
-	      	</Slider>
-	    </div>
+		          {images.map(([uniqueId, imgRef]) => <div><Img key={uniqueId} className={style.SliderImages} src={imgRef} /></div>)}
+	      	  </Slider>
+	      </div>
       </div>
     );
   }
