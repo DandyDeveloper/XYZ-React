@@ -9,4 +9,4 @@ Start the server with Webpack hot-loading: `npm install` & `npm start`. This wil
 Run `npm run build` 
 
 ## [Demo](https://dandydeveloper.github.io/xyz-react.github.io/)
-Note: Static assets don't work very well with Githug pages. This would be better deployed with Nginx to handle static assets. 
+Note: Static assets don't work very well with Github pages. This would be better deployed with Nginx to handle static assets. 
