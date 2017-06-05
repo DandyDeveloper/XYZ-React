@@ -1,15 +1,18 @@
-.Wrapper { 
+.TopWrapper { 
 	width: 100%;
 	height:	100%;
 	z-index: -1; 
     overflow: hidden;
     position: absolute;
     top: 0;
+    right: 0;
 }
 
 .TopMainHeading { 
-	width: 31%;
-    padding: 29% 0 0 32%;
+    width: 100%;
+    position: absolute;
+    top: 40%;
+    left: 30%;
 }
 
 .TopMainHeading h1 { 
@@ -20,15 +23,15 @@
 .TopMainHeading p { 
 	font-size: 12px;
 	font-weight: 600;
-	font-weight: bold;
-	float: right;
-	margin: 0; 
-	padding-right: 8%
+	font-weight: bold; 
+	padding-left: 18%;
 }
 
 .TopSubHeading { 
-	width: 30%;
-    padding: 20% 0 0 54%;
+	width: 100%;
+    position: absolute;
+    top: 75%;
+    left: 52%;
 }
 
 .TopSubHeading h2 { 
@@ -39,7 +42,7 @@
 .Crossbar1 { 
 	height: 100%;
 	width: 30px;
-	right: 19%;
+	right: 21%;
 	top: 0;	
 	position: absolute;
 	background: #70c1b3;
@@ -51,10 +54,10 @@
     width: 100%;    
 	height: 30px;
 	top: 30%;
-	left: 10%;
+	left: 8%;
 	background: #ff1654;
 	position: absolute;
-    transform: rotate(31deg);
+    transform: rotate(33deg);
 	z-index: -1;
 	overflow: hidden;
 	box-shadow: 5px -2px 9px 0px grey; 
@@ -65,9 +68,9 @@
 	height: 30px;
 	background: #55a0c0;
 	position: absolute;
-    transform: rotate(-32.5deg);
-	z-index: -1;
-	top: 62%;
-    left: 10%;
+    transform: rotate(-31.5deg);
+    z-index: -1;
+    top: 62%;
+    left: 8%;
     box-shadow: 5px -2px 9px 0px grey;
 }

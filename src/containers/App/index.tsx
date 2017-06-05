@@ -5,7 +5,7 @@ import { Logo, SideNav, Footer } from '../../components';
 export class App extends React.Component<any, any> {
   render() {
     return (
-      <div className={style.normal}>
+      <div className={style.Wrapper}>
         <Logo />
         <SideNav />
         <Footer />

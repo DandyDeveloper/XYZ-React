@@ -32,7 +32,8 @@ export class SideNav extends React.Component<any, any> {
                     [4, '/', 'アクセス', style.SideNavLink ], [5, '/', '採用情報', style.Inactive ], [6, '/', 'お問合せ', style.SideNavLink ]
                   ] 
     return (
-      <div>
+    <div>
+      <div className={style.NavWrapper}>
         <div className={style.SideNav}>
             <div>
               <ul>
@@ -41,10 +42,13 @@ export class SideNav extends React.Component<any, any> {
             </div>
           <Img className={style.DnaPng} src={ Logo } /> 
         </div>
+      </div>
+      <div> 
         <Route path="/" exact component={ TopPage } />
         <Route path="/companyinformation" component={ CompanyInformation } />
         <Route path="/merchandise" component={ MerchandisePage } />
       </div>
+    </div>
     );
   }
 }
