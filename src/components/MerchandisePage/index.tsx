@@ -6,6 +6,7 @@ import { TopHeader } from '../TopHeader';
 
 export class MerchandisePage extends React.Component<any, any> {
   render() {
+    //Slider settings -> Dotter bottom. Arrow support. Styling. 
   	const sliderSettings = { 
   		focusOnSelect: true,
       dots: true,	

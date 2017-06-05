@@ -12,5 +12,5 @@ ReactDOM.render(
     		<Route path="/" component={App} />
 		</Switch>
     </Router>,
-  document.getElementById('root')
+  document.getElementById('htdocs')
 );

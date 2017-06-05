@@ -4,7 +4,7 @@ import Img from 'react-image';
 import { CompanyInformation, MerchandisePage, TopPage } from '../../components'
 import { Route, Link } from 'react-router-dom';
 
-//Originally for mapping Routes -> Webpack bug found
+//Originally for mapping Routes -> Webpack bug found. Reverted to static Routes
 const routes = [
   { 
     path: '/',
@@ -25,6 +25,7 @@ const routes = [
 
 export class SideNav extends React.Component<any, any> {
   render() {
+
     const Logo = require('../../assets/img/dna.png'); 
     const links = [
                     [1, '/', 'トップ', style.SideNavLink ], [2, '/companyinformation', '会社概要', style.SideNavLink ], [3, '/merchandise', '商品一覧', style.SideNavLink ], 

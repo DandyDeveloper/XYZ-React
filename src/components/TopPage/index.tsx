@@ -13,6 +13,7 @@ export class TopPage extends React.Component<any, any> {
         <div className={style.TopSubHeading}>
           <h2>DNA検査なら、XYZ Inc.</h2>
         </div>
+        //CSS Crossbars for Top Page
         <div className={style.Crossbar1} />
         <div className={style.Crossbar2} />
         <div className={style.Crossbar3} />
