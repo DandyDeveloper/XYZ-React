@@ -1,0 +1,73 @@
+.Wrapper { 
+	width: 100%;
+	height:	100%;
+	z-index: -1; 
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+}
+
+.TopMainHeading { 
+	width: 31%;
+    padding: 29% 0 0 32%;
+}
+
+.TopMainHeading h1 { 
+	font-size: 23px;
+	font-weight: 400;
+}
+
+.TopMainHeading p { 
+	font-size: 12px;
+	font-weight: 600;
+	font-weight: bold;
+	float: right;
+	margin: 0; 
+	padding-right: 8%
+}
+
+.TopSubHeading { 
+	width: 30%;
+    padding: 20% 0 0 54%;
+}
+
+.TopSubHeading h2 { 
+	font-size: 20px;
+	font-weight: 400;
+}
+
+.Crossbar1 { 
+	height: 100%;
+	width: 30px;
+	right: 19%;
+	top: 0;	
+	position: absolute;
+	background: #70c1b3;
+	z-index: -1;
+	box-shadow: 0px -20px 0px 0px grey;
+}
+
+.Crossbar2 { 
+    width: 100%;    
+	height: 30px;
+	top: 30%;
+	left: 10%;
+	background: #ff1654;
+	position: absolute;
+    transform: rotate(31deg);
+	z-index: -1;
+	overflow: hidden;
+	box-shadow: 5px -2px 9px 0px grey; 
+}
+
+.Crossbar3 { 
+    width: 100%;
+	height: 30px;
+	background: #55a0c0;
+	position: absolute;
+    transform: rotate(-32.5deg);
+	z-index: -1;
+	top: 62%;
+    left: 10%;
+    box-shadow: 5px -2px 9px 0px grey;
+}

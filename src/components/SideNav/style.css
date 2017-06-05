@@ -1,0 +1,58 @@
+.SideNav { 
+	height: 67.8vh;
+	width: 20%;
+	padding: 8% 0% 0% 0%;
+	margin: 0;
+	display: inline-block;
+	float: left; 
+	border-style: none solid none none;
+	border-right-width: 0.5px;			
+	font-size: 12pt; 
+	border-color: #efefef;	
+	background-color: white;
+	z-index: 100;
+}
+
+.SideNav a {
+	color: #242424;
+	font-weight: 500;
+	display: block;
+    text-decoration: none;
+    width: 100%;
+    margin: 5px 0 5px 0;
+}
+
+.SideNavLink a:after {
+	content: '';
+	display: block;
+	margin: auto;
+	height: 3px;
+	width: 0px;
+	background: transparent;
+	transition: width .5s ease, background-color .5s ease;
+	margin-top: 3px;
+}
+
+.SideNavLink a:hover:after {
+	width: 25%;
+	background: grey;
+}
+
+.Inactive { 
+    z-index: 1;
+}
+
+.Inactive a { 
+    text-decoration: line-through;
+    text-decoration-color: #dddddd;
+    color: #ff3564;
+    z-index: 2;
+}
+
+.DnaPng { 
+	height: 10%;
+	width: 40px;
+	padding: 30% 0 0 40%; 
+}
+
+ 

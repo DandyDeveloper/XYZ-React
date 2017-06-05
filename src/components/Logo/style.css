@@ -1,0 +1,17 @@
+.logo { 
+	height: 12vh;
+	width: 20%;
+	padding-top: 7%;
+	display: inline-block;
+	border-style: none solid solid none;
+	font-size: 14pt;
+	font-weight: 400; 
+	text-align: center;
+	background-color: white;
+	border-bottom-color: #b7b7b7;
+	border-right-color: #efefef;
+	border-right-width: 0.5px;
+	border-bottom-width: 0.8px;
+	margin: 0;
+	z-index: 100;
+}
